@@ -1,0 +1,665 @@
+/*start rest*/
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+input,
+input:focus,
+textarea,
+textarea:focus,
+select,
+select:focus {
+  box-shadow: unset;
+  outline: unset;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  font-size: 3.6rem;
+  line-height: 4.6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+/*end reset*/
+
+/*start navbar style*/
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar-brand img {
+  height: 5rem;
+  display: block; /*scapam de pixelii de sub imagine*/
+}
+nav.navbar {
+  background-color: #181f4c;
+  border: none;
+}
+.navbar-nav .fa-youtube {
+  color: #ff0000;
+}
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: #eaeaea;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #f8b357;
+}
+a.dropdown-item {
+  display: block;
+  color: #fff;
+  background-color: #181f4c;
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 3px 20px;
+  clear: both;
+  white-space: nowrap;
+  line-height: 1.4;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  border: 1px dotted #4d4d4d;
+  cursor: pointer;
+}
+/*end navbar style*/
+/*main color: #181f4c*/
+
+/*start sectiune-video*/
+div.sectiune1 {
+  background-color: #181f4c;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  padding-left: 0;
+}
+
+div.sectiune1 div.sectiune-film video {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #181f4c;
+}
+
+div.sectiune1 div.container-banner-content {
+  top: 20%;
+  display: inline-block;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  line-height: 1.2em;
+  color: #ffffff;
+  padding-left: 15rem;
+  margin: 0 0 10px;
+  position: absolute;
+}
+
+div.container-banner-content p {
+  color: #ffffff;
+}
+
+div.container-banner-content span {
+  color: orange;
+}
+
+div.container-banner-content img {
+  display: inline;
+  height: 1.3em;
+}
+
+div.container-banner-content a {
+  display: inline-block;
+  border: 2px solid #2bb686;
+  color: whitesmoke;
+  background-color: #2bb686;
+  padding: 1rem 0;
+  min-width: 20rem;
+  max-width: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  margin-top: 4rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+div.container-banner-content a:hover {
+  color: #fff;
+  background-color: transparent;
+  color: #2bb686;
+}
+/*end sectiune video*/
+
+/*start sectiune-Calendar*/
+.container.sectiune2 .calendar h3.titlu {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  color: #181f4c;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 10px 0;
+  margin-bottom: 1.2rem;
+}
+.event .list-inline {
+  display: flex;
+  justify-content: space-around;
+}
+.container.sectiune2 .event {
+  width: 100%;
+  height: 90%;
+  margin: 1rem 1%;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.event h3 {
+  margin-bottom: 2rem;
+}
+.event li {
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+.event .border {
+  height: 5px;
+  border-radius: 3px;
+  background-color: tomato;
+  margin-top: 2rem;
+}
+/*end sectiune-Calendar
+
+/*start sectiune Ce este ITSchool*/
+div.container-fluid.sectiune3 {
+  background-color: #dfedf5;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  clip-path: polygon(0 0, 100% 4rem, 100% 100%, 0% 100%);
+}
+div.container-fluid.sectiune3 h3.titlu {
+  text-align: center;
+  color: #181f4c;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 10px 0;
+  margin-bottom: 1.2rem;
+}
+div.container-fluid.sectiune3 div.row p.description {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+/*end sectiune Ce este ITSchool*/
+
+/*start sectiune Certificari*/
+div.container h3.titlu {
+  text-align: center;
+  color: #181f4c;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 10px 0;
+  margin-bottom: 1.2rem;
+}
+div.container div.certificari .img-responsive {
+  height: auto;
+  margin: 0 auto;
+  width: 70%;
+  line-height: 2rem;
+  border: 0;
+  padding-bottom: 1.5rem;
+}
+div.container p.section-description {
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+div.container .section-description {
+  padding-top: 2rem;
+  border-top: 1px solid #101d42;
+  min-height: 7em;
+}
+/*end sectiune Certificari*/
+
+/*start sectiune Cui se adreseaza?*/
+div.container-fluid.blue_bg.sectiunea5 {
+  background-color: #dfedf5;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+div.container-fluid.blue_bg h3 {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  color: #181f4c;
+  padding: 10px 0;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+div.container div.adresanti .img-responsive {
+  height: 15rem;
+  display: block;
+  width: 5rem;
+  height: 6rem;
+  margin: 2rem auto 0;
+}
+div.adresanti h2 {
+  text-align: center;
+  color: #101d42;
+  font-weight: 400;
+  font-family: Montserrat, sans-serif;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+div.row div.adresanti p.descriere {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0;
+  margin: 0 0 10px;
+  margin-bottom: 1.2rem;
+  color: #2b2922;
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+/*end sectiune Cui se adreseaza?*/
+
+/*start sectiune Parteneri*/
+div.container h3.titlu {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  color: #181f4c;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 10px 0;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+ul.row.list div.parteneri img {
+  filter: grayscale(100%);
+  opacity: 0.75;
+  padding: 0 1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+  width: 40%;
+  height: 6rem;
+  margin-left: 20%;
+}
+ul.row.list div.parteneri img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+ul.row.list::before {
+  content: "";
+  display: table;
+  box-sizing: border-box;
+}
+/*end sectiune Parteneri*/
+
+/*start sectiune Ce spun cursantii*/
+div.container-fluid.blue_bg {
+  background-color: #dfedf5;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+div.container-fluid.blue_bg h3 {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  color: #181f4c;
+  line-height: 2.3rem;
+  padding: 12px 0;
+  margin-bottom: 1.2rem;
+}
+div.container-fluid.blue_bg img {
+  border-radius: 50%;
+  width: 12.5rem;
+}
+div.container-fluid.blue_bg p.mesaj {
+  line-height: 1.4em;
+  min-height: 10em;
+  font-style: italic;
+  color: #2b2922;
+  margin: 0 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+div.container-fluid.blue_bg p.descriere {
+  margin-top: 1em;
+  color: #2b2922;
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}
+/*end sectiune Ce spun cursantii*/
+
+/*start sectiune Programe pregatire*/
+div.container.sectiune8 p.paragraf {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 0;
+  padding-top: 15px;
+  margin: 0 0 10px;
+  margin-bottom: 1.2rem;
+  color: #2b2922;
+  font-size: 1.5rem;
+  line-height: 1.4em;
+  font-weight: 400;
+}
+div.container.sectiune8 p.subtitle {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+div.container div.row ul {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 1.5rem;
+}
+div.container div.row.programe ul img {
+  width: 7rem;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  padding: 0 1rem;
+  transition: all 0.3s;
+}
+div.container div.row ul img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+ul.row.list::before {
+  content: "";
+  display: table;
+  box-sizing: border-box;
+}
+/*end sectiune Programe pregatire*/
+
+/*start sectiune Rezultate*/
+div.container-fluid {
+  background-color: #dfedf5;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  clip-path: polygon(0 0, 100% 4rem, 100% 100%, 0% 100%);
+}
+
+div.container.sectiune9 p {
+  font-family: "Poppins", sans-serif;
+  color: #131313;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+div.container.sectiune9 p.numbersCount span {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+div.container div.row p.locatii {
+  text-align: center;
+  background-color: #101d42;
+  color: whitesmoke;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+div.container div.row p.adresa {
+  text-align: center;
+  color: #101d42;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+div.harta img {
+  vertical-align: middle;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border: 0;
+}
+/*end sectiune Rezultate*/
+
+/*start sectiune Aboneaza-te*/
+div.container h3 {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: #101d42;
+  padding: 0;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+div.container div.row p.text {
+  text-align: center;
+  color: #2b2922;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+div.container div.row form {
+  display: block;
+  width: 100%;
+  float: left;
+  margin: 0 auto;
+  min-height: 1px;
+  padding: 2rem 1.5rem 5rem 1.5rem;
+  text-align: center;
+}
+div.container div.row input {
+  padding: 15px;
+  border: 1px solid #c3c3c3;
+  border-right: none;
+  width: 30%;
+  font-size: 20px;
+  border-radius: 5px 0 0 5px;
+}
+div.container #form_submit {
+  background-color: #2bb686;
+  border: 1px solid #2bb686;
+  color: #fff;
+  width: 20%;
+  font-weight: 400;
+  padding: 15px 0;
+  border-radius: 0 5px 5px 0px;
+  font-size: 20px;
+}
+/*end sectiune Aboneaza-te*/
+
+/*start sectiune Footer*/
+footer.container-fluid.blue_bg {
+  display: block;
+  background-color: #101d42;
+  padding: 10rem 1.5rem 0;
+  overflow: hidden;
+}
+footer.container-fluid.blue_bg:before {
+  content: "";
+  display: table;
+}
+div.container div.row div.column2,
+div.column3,
+div.column4 {
+  border-left: 0.5px solid #b0b0b0;
+}
+footer.container-fluid.blue_bg h3.title {
+  text-align: left;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #fbb44c;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  box-shadow: 0 0 0 0 grey;
+}
+footer.container-fluid.blue_bg ul.list-unstyled {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #ffffff;
+  padding-left: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul.list-unstyled img {
+  display: block;
+  height: 15px;
+  margin-bottom: 15px;
+}
+ul.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0 25px;
+}
+ul.social-media li {
+  display: inline-block;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #ffffff;
+  font-weight: 100;
+}
+footer.container-fluid .fa-facebook-square {
+  color: #3b5998;
+}
+footer.container-fluid .fa-twitter-square {
+  color: #4099ff;
+}
+div.bb {
+  border-bottom: 1px dotted #4d4d4d;
+  width: 100%;
+  height: 1px;
+  clear: both;
+  padding-top: 5px;
+}
+h5.footer-text {
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+.chat {
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+  font-size: 3rem;
+  width: 4rem;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: #101d42;
+  padding: 5px;
+}
+/*end sectiune Footer*/
+@media (max-width: 1024px) {
+  header ul {
+    display: none;
+  }
+  .collapse.navbar-collapse .fa-bars {
+    display: block;
+  }
+  div.sectiune1 div.container-banner-content {
+    top: 10%;
+    line-height: 1em;
+    padding-left: 5rem;
+  }
+  div.container.sectiune2 div.calendar .col-md-3 {
+    font-size: 1.2rem;
+  }
+  div.container div.row div.column2,
+  div.column3,
+  div.column4 {
+    border-left: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  div.sectiune1 {
+    padding-top: 15vh;
+    line-height: 1em;
+  }
+  div.sectiune1 div.container-banner-content {
+    top: 15%;
+  }
+  div.container-banner-content a {
+    display: none;
+  }
+  div.container-fluid.sectiune3 div.row div.col-sm-12 {
+    padding-bottom: 1.2rem;
+  }
+  div.container.sectiune4 {
+    width: 70%;
+    margin-left: 50px;
+  }
+  div.container div.row form {
+    padding: 2rem 0rem 5rem 0rem;
+  }
+}
+/*end responsive*/
