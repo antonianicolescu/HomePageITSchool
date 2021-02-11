@@ -349,13 +349,13 @@ ul.row.list::before {
 /*end sectiune Parteneri*/
 
 /*start sectiune Ce spun cursantii*/
-div.container-fluid.blue_bg {
+.container-fluid.blue_bg {
   background-color: #dfedf5;
   padding-top: 4rem;
   padding-bottom: 4rem;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 }
-div.container-fluid.blue_bg h3 {
+.container-fluid.blue_bg h3 {
   text-align: center;
   font-family: "Work Sans", sans-serif;
   color: #181f4c;
@@ -363,11 +363,12 @@ div.container-fluid.blue_bg h3 {
   padding: 12px 0;
   margin-bottom: 1.2rem;
 }
-div.container-fluid.blue_bg img {
+.carousel-inner img {
   border-radius: 50%;
   width: 12.5rem;
 }
-div.container-fluid.blue_bg p.mesaj {
+
+.carousel-inner p.mesaj {
   line-height: 1.4em;
   min-height: 10em;
   font-style: italic;
@@ -376,18 +377,29 @@ div.container-fluid.blue_bg p.mesaj {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
-div.container-fluid.blue_bg p.descriere {
-  margin-top: 1em;
+.container-fluid.blue_bg h5.descriere {
   color: #2b2922;
-  margin: 10px 0;
   font-weight: 400;
   font-size: 14px;
   font-family: Montserrat, sans-serif;
+  line-height: 1.7rem;
 }
+h5.descriere span {
+  color: #101d42;
+  display: block;
+}
+.carousel.slide .carousel-indicators li {
+  border-radius: 10px;
+  border: 1px solid #101d42;
+  background-color: rgba(0, 0, 0, 0);
+  width: 20px;
+  height: 15px;
+}
+
 /*end sectiune Ce spun cursantii*/
 
 /*start sectiune Programe pregatire*/
-div.container.sectiune8 p.paragraf {
+.container.sectiune8 p.paragraf {
   text-align: left;
   font-family: "Poppins", sans-serif;
   padding: 10px 0;
@@ -399,25 +411,25 @@ div.container.sectiune8 p.paragraf {
   line-height: 1.4em;
   font-weight: 400;
 }
-div.container.sectiune8 p.subtitle {
+.container.sectiune8 p.subtitle {
   text-align: center;
   margin-bottom: 4rem;
 }
-div.container div.row ul {
+.container div.row ul {
   display: flex;
   justify-content: center;
   align-content: center;
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
-div.container div.row.programe ul img {
+.container div.row.programe ul img {
   width: 7rem;
   filter: grayscale(100%);
   opacity: 0.75;
   padding: 0 1rem;
   transition: all 0.3s;
 }
-div.container div.row ul img:hover {
+.container div.row ul img:hover {
   filter: grayscale(0%);
   opacity: 1;
 }
@@ -655,6 +667,13 @@ h5.footer-text {
   }
   div.container div.row form {
     padding: 2rem 0rem 5rem 0rem;
+  }
+  div.carousel-item img {
+    margin: 0;
+  }
+  ul.row.list div.parteneri img {
+    width: auto;
+    height: 12rem;
   }
 }
 /*end responsive*/
